@@ -75,7 +75,7 @@ jobs:
         with:
           mayhem-url: https://app.mayhem.security
           mayhem-token: ${{ secrets.MAYHEM_TOKEN }}
-          args: --image ${{ needs.build.outputs.image }} --file Mayhemfile --duration 60
+          args: --image ${{ needs.build.outputs.image }} --file Mayhemfile --duration 60 --project weather-api
           owner: forallsecure-demo
           fail-on-defects: true
           sarif-output: sarif
